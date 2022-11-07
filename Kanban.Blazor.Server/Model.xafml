@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <NavigationItems>
+    <Items>
+      <Item Id="Default">
+        <Items>
+          <Item Id="@cbf140fb-6139-4060-95e3-51c8f5db19c1" ViewId="Tarea_ListView_Copy" IsNewNode="True" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+  <SchemaModules>
+    <SchemaModule Name="SystemModule" Version="22.1.3.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views DefaultListEditor="DevExpress.ExpressApp.Blazor.Editors.DxGridListEditor">
+    <ListView Id="Tarea_ListView" DataAccessMode="Client" />
+    <ListView Id="Tarea_ListView_Copy" ClassName="Kanban.Module.BusinessObjects.Tarea" EditorTypeName="DevExpress.ExpressApp.Blazor.Editors.DxGridListEditor" IsNewNode="True">
+      <Columns IsNewNode="True">
+        <ColumnInfo Id="Descripcion" PropertyName="Descripcion" SortIndex="0" SortOrder="Ascending" Index="0" IsNewNode="True" />
+        <ColumnInfo Id="IdTarea" PropertyName="IdTarea" Index="1" IsNewNode="True" />
+        <ColumnInfo Id="Fecha" PropertyName="Fecha" Index="2" IsNewNode="True" />
+        <ColumnInfo Id="usuario" PropertyName="usuario" Index="3" IsNewNode="True" />
+        <ColumnInfo Id="Estado" PropertyName="Estado" Index="4" IsNewNode="True" />
+      </Columns>
+    </ListView>
+  </Views>
+</Application>

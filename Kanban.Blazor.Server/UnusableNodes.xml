@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="Task_ListView_Copy" ClassName="Kanban.Module.BusinessObjects.Task" EditorTypeName="DevExpress.ExpressApp.Blazor.Editors.DxGridListEditor">
+      <Columns Id="Columns">
+        <ColumnInfo Id="Descripcion" PropertyName="Descripcion" SortIndex="0" SortOrder="Ascending" Index="0" />
+        <ColumnInfo Id="IdTarea" PropertyName="IdTarea" Index="1" />
+        <ColumnInfo Id="Fecha" PropertyName="Fecha" Index="2" />
+        <ColumnInfo Id="usuario" PropertyName="usuario" Index="3" />
+      </Columns>
+    </ListView>
+  </Views>
+  <NavigationItems Id="NavigationItems">
+    <Items Id="Items">
+      <Item Id="Default">
+        <Items Id="Items">
+          <Item Id="Task1" ViewId="Task_ListView_Copy" />
+        </Items>
+      </Item>
+    </Items>
+  </NavigationItems>
+</Application>

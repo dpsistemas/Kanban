@@ -1,0 +1,14 @@
+﻿@using Kanban.Module.BusinessObjects
+
+
+<GridKanvan ItemClick=@ComponentModel.OnItemClick />
+
+
+@code {
+    public static RenderFragment Create(KanvanModelEditor componentModel) =>
+        @<GridKanvanListView ComponentModel=@componentModel />    ;
+    [Parameter] public KanvanModelEditor ComponentModel { get; set; }
+
+    
+
+}
